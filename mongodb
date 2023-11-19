@@ -9,3 +9,9 @@ _id: ObjectId("655a00732af2afe750405c8c"),
 
 CHANGING STREET NAME:
 db.restaurants.updateOne({_id: ObjectId("655a00732af2afe750405c8c")}, { $set: {"address.street": "some street"} })
+
+
+
+DELETING ONE OBJECT:
+                    (deleteMany)
+db.restaurants.deleteOne({_id: ObjectId("655a00732af2afe750405c8c")})
