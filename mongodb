@@ -1,0 +1,11 @@
+INSERTING OBJECT:
+db.restaurants.insertOne({name: "Munich Schnitzelhouse", address: {street: "some street 5", streetNumber:"23b"}})
+
+
+
+_id: ObjectId("655a00732af2afe750405c8c"),
+    name: 'Munich Schnitzelhouse',
+    address: { street: 'some street 5', streetNumber: '23b' }
+
+CHANGING STREET NAME:
+db.restaurants.updateOne({_id: ObjectId("655a00732af2afe750405c8c")}, { $set: {"address.street": "some street"} })
